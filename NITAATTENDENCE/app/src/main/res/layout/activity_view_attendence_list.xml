@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.nitaattendence.ViewAttendenceListActivity">
+
+    <TextView
+        android:id="@+id/totalattendence_textview"
+        android:layout_width="match_parent"
+        android:layout_height="56sp"
+        android:text="Total Present :  0"
+        android:gravity="center_vertical"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:background="@color/adminlogin"
+        android:textColor="#ffffff"/>
+
+    <ListView
+        android:id="@+id/studentattendence_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"/>
+</LinearLayout>

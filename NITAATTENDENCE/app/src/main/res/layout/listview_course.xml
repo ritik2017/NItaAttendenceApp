@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/coursename_textview"
+        android:layout_width="match_parent"
+        android:layout_height="84sp"
+        android:text="course"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:background="@color/tan_background"
+        android:textColor="#000000"/>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "630243630100",
+    "firebase_url": "https://nitaattendence.firebaseio.com",
+    "project_id": "nitaattendence",
+    "storage_bucket": "nitaattendence.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:630243630100:android:01b8604673f124db",
+        "android_client_info": {
+          "package_name": "com.example.android.nitaattendence"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "630243630100-2jvt196bjr8srm8dpgq5iecvirn1ig1v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.nitaattendence",
+            "certificate_hash": "de3c2501a0640d2967f6693c7ef1cfe7d64c7752"
+          }
+        },
+        {
+          "client_id": "630243630100-n2k2he95immdipcr3vkhig9r4rh16sde.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLzRfqrySZ4M1kfyVIwsXmkz0F-HYxjSk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "630243630100-n2k2he95immdipcr3vkhig9r4rh16sde.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

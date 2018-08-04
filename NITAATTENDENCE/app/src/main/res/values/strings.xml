@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NITA ATTENDENCE</string>
+    <string name="username">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="take_attendence">Take \nAttendence</string>
+    <string name="view_attendence">View \nAttendence</string>
+    <string name="add_teacher">ADD TEACHER</string>
+    <string name="add_student">ADD STUDENT</string>
+    <string name="view_courses">View \nCourses</string>
+    <string name="view_calendar">View \nCalendar</string>
+    <string name="date">DATE</string>
+    <string name="otp">ONE TIME PASSWORD</string>
+    <string name="courses">COURSES</string>
+    <string name="addCourse">ADD COURSE</string>
+    <string name="coursename">COURSE NAME</string>
+    <string name="view_student">View \nStudent</string>
+    <string name="view_teacher">View \nTeacher</string>
+    <string name="give_attendence">Give \nAttendence</string>
+    <string name="enrollment_number">ENROLLMENT NUMBER</string>
+    <string name="name">NAME</string>
+    <string name="view_excel_sheet">View \nExcel \nSheet</string>
+    <string name="generateexcelsheet">Generate Excel Sheet</string>
+    <string name="year">YEAR</string>
+    <string name="section">SECTION</string>
+    <string name="department">DEPARTMENT</string>
+    <string name="expireqr">EXPIRE QR</string>
+</resources>

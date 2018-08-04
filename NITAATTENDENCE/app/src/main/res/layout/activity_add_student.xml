@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.nitaattendence.AddStudentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/tan_background">
+
+        <EditText
+            android:id="@+id/name_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="12sp"/>
+        <EditText
+            android:id="@+id/enrollment_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enrollment_number"
+            android:layout_marginBottom="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14sp"
+            android:layout_marginTop="12sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/year"
+                android:layout_marginLeft="4sp"/>
+
+            <Spinner
+                android:id="@+id/yearSpinnerDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:layout_marginLeft="8sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/section" />
+
+            <Spinner
+                android:id="@+id/sectionSpinnerDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10sp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14sp"
+            android:layout_marginTop="12sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/department"
+                android:layout_marginLeft="4sp"/>
+
+            <Spinner
+                android:id="@+id/departmentSpinnerDropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10sp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/username_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:layout_marginBottom="12sp"/>
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_marginBottom="12sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addstudent_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_student"
+        android:layout_alignParentBottom="true"
+        android:background="@color/adminlogin"
+        android:textColor="#ffffff"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.nitaattendence.ViewStudentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48sp"
+        android:orientation="horizontal"
+        android:background="@color/adminlogin"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/year"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="4sp"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            android:id="@+id/year_Spinner_Dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="10sp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginLeft="8sp"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/section"
+            android:layout_gravity="center"/>
+
+        <Spinner
+            android:id="@+id/section_Spinner_Dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="10sp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32sp"
+        android:orientation="horizontal"
+        android:background="@color/adminlogin"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/department"
+            android:layout_marginLeft="4sp"
+            android:textColor="#ffffff"/>
+
+        <Spinner
+            android:id="@+id/department_Spinner_Dropdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="10sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/apply_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:text="APPlY"
+        android:textColor="#ffffff"/>
+    <ListView
+        android:id="@+id/viewstudent_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/transparent"
+        android:transcriptMode="alwaysScroll"/>
+
+</LinearLayout>
