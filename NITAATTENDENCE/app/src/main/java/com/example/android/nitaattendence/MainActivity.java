@@ -7,7 +7,9 @@ import android.graphics.PorterDuff;
 import android.hardware.input.InputManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.support.annotation.NonNull;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,6 +36,7 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
 
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
     private int lengthStudent , lengthTeacher;
 
     private LinearLayout mainLinearLayout;
+
     private FirebaseAuth mFirebaseAuth;
     private FirebaseAuth.AuthStateListener mAuthStateListener;
 
@@ -84,8 +88,9 @@ public class MainActivity extends AppCompatActivity {
                             AuthUI.getInstance()
                                     .createSignInIntentBuilder()
                                     .setIsSmartLockEnabled(false)
-                                    .setProviders(AuthUI.EMAIL_PROVIDER,
-                                            AuthUI.GOOGLE_PROVIDER)
+                                    .setAvailableProviders(Arrays.asList(
+                                            new AuthUI.IdpConfig.EmailBuilder().build(),
+                                            new AuthUI.IdpConfig.GoogleBuilder().build()))
                                     .build(),
                             RC_SIGN_IN);
                 }
@@ -204,6 +209,7 @@ public class MainActivity extends AppCompatActivity {
         mainLinearLayout = (LinearLayout) findViewById(R.id.main_linaerlayout);
 
         mainLinearLayout.setOnClickListener(new View.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
             @Override
             public void onClick(View v) {
                 closeKeyboard();
@@ -243,6 +249,7 @@ public class MainActivity extends AppCompatActivity {
         return activeNetworkInfo != null;
     }
 
+   @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
    private void  closeKeyboard(){
 
         View view = this.getCurrentFocus();

@@ -1,55 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.example.android.nitaattendence.MainActivity">
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.nitaattendence.MainActivity">
-    <ScrollView
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:id="@+id/main_linaerlayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/background">
-
-        <LinearLayout
-            android:id="@+id/main_linaerlayout"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nitagartala"
+            android:layout_marginBottom="44sp"
+            android:layout_marginTop="24sp" />
+        <EditText
+            android:id="@+id/username_edittext"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/background"
-            android:orientation="vertical"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/nitagartala"
-                android:layout_marginBottom="44sp"
-                android:layout_marginTop="24sp" />
-            <EditText
-                android:id="@+id/username_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/username"
-                android:layout_marginBottom="24sp"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"/>
-            <EditText
-                android:id="@+id/password_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/password"
-                android:layout_marginBottom="42sp"
-                android:textColor="#ffffff"
-                android:textColorHint="#ffffff"
-                android:password="true"/>
-            <Button
-                android:id="@+id/login_button"
-                android:layout_width="122sp"
-                android:layout_height="wrap_content"
-                android:text="@string/login"
-                android:background="@color/colorPrimaryDark"
-                android:textColor="#ffffff"
-                android:textSize="18sp" />
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:layout_marginBottom="24sp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"/>
+        <EditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:layout_marginBottom="42sp"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:password="true"/>
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="122sp"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
 
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
+</ScrollView>
 </LinearLayout>
 

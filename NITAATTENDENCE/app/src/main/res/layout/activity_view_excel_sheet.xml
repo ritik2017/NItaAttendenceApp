@@ -6,12 +6,16 @@
     android:layout_height="match_parent"
     android:background="@color/adminlogin"
     tools:context="com.example.android.nitaattendence.ViewExcelSheetActivity">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/adminlogin"
-        android:layout_marginTop="12sp">
+        android:layout_marginTop="12sp"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="wrap_content"
@@ -28,12 +32,79 @@
             android:spinnerMode="dropdown"
             android:gravity="center"
             android:layout_marginLeft="4sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginLeft="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/year"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="4sp"/>
+
+            <Spinner
+                android:id="@+id/year_Spinner_Dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10sp"/>
+            <TextView
+                android:layout_marginLeft="8sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="@string/section" />
+
+            <Spinner
+                android:id="@+id/section_Spinner_Dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10sp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32sp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="14sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginLeft="8sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#ffffff"
+                android:text="@string/department"
+                android:layout_marginLeft="4sp"/>
+
+            <Spinner
+                android:id="@+id/department_Spinner_Dropdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:layout_marginLeft="10sp"/>
+
+        </LinearLayout>
 
     </LinearLayout>
+
 
     <Button
         android:id="@+id/generate_excel"
         android:layout_width="match_parent"
+        android:textColor="#ffffff"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:text="@string/generateexcelsheet"

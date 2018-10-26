@@ -20,6 +20,7 @@
             android:textColor="#C51162"
             android:textSize="32sp" />
 
+
         <TextView
             android:id="@+id/name_textview"
             android:layout_width="match_parent"

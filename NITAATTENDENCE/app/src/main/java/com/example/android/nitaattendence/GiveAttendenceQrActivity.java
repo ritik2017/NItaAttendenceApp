@@ -27,6 +27,7 @@ public class GiveAttendenceQrActivity extends AppCompatActivity implements ZXing
         scannerView =new ZXingScannerView(this);
         setContentView(scannerView);
 
+
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
 
             if(checkPermission()){

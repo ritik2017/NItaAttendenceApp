@@ -3,12 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.android.nitaattendence">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.CAMERA"/>
     <uses-feature android:name="android.hardware.camera"/>
     <uses-feature android:name="android.hardware.autofocus"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -42,7 +41,7 @@
         <activity android:name=".ViewCourseStudentActivity" />
         <activity android:name=".ViewTeacherStudentActivity" />
         <activity android:name=".ViewExcelSheetActivity" />
-        <activity android:name=".GiveAttendenceQrActivity"></activity>
+        <activity android:name=".GiveAttendenceQrActivity"/>
     </application>
 
 </manifest>
